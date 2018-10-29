@@ -1,0 +1,82 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+#ball{
+    margin-left: 20px;
+    margin-bottom: 2px;  
+    width: 40px; 
+    height: 40px; 
+    border: 1px solid white;
+    background: black; 
+    border-radius: 50%;
+    transition: 1s all ease-in;         
+}
+
+#ball > div{
+    position: relative;
+    top: 8px;
+    left: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+
+}  
+
+#field{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid white;
+    background: skyblue; 
+    width: 400px;
+}
+
+#ground{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100px;
+    background: chocolate;
+    transition: 1s all ease-in;
+}
+
+#ground > div{
+    width: 20px;
+    height: 15px;
+    border-radius: 10px 10px 5px 5px;
+    background: grey;
+}
+
+#heaven{
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    width: 2000px;
+    height: 250px;
+    background: skyblue;
+    transition: 1s all ease-in;
+}
+
+#clouds{
+    display: flex;
+    height: 100px;
+    padding: 20px;
+    transition: 1s all ease;
+}
+
+#clouds > div{
+    margin-right: 15px;
+    width: 120px;
+    height: 80px;
+    border-radius: 50%;
+    background: white; 
+}
+
+#slash{
+   height: 30px;
+   margin: 10px 0; 
+}

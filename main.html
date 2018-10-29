@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html>
+    <head>
+        <script src='action.js'></script>
+        <link rel='stylesheet' type='text/css' href='design.css'>
+    </head>
+
+    <body>
+
+        <div id='field'>
+            <div id='heaven'>
+                <div id='clouds'></div>
+                <div id='ball'><div></div></div>
+            </div>
+            <div id='ground'></div>
+        </div>
+        <div style="display: grid; margin-left: 10px;">
+            <button id='slash' onmouseover="fire()" onmouseout="fire()">Over</button>
+            <input id='angle' type='range' min="0" max="90" id='angle' />
+        </div>
+    </body>
+</html>
