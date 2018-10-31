@@ -4,15 +4,17 @@ body{
     justify-content: center;
     background: black;
 }
+
 #ball{
     margin-left: 20px;
-    margin-bottom: 2px;  
+    margin-bottom: -5px;  
     width: 40px; 
     height: 40px; 
     border: 1px solid white;
     background: black; 
     border-radius: 50%;
-    transition: 1s all ease-in;         
+    transition: 1s all linear;
+    z-index: 1000;         
 }
 
 #ball > div{
@@ -31,49 +33,55 @@ body{
     display: flex;
     flex-wrap: wrap;
     border: 1px solid white;
-    background: skyblue; 
-    width: 400px;
+    background: skyblue;
+    margin-top: 200px; 
+    width: 500px;
 }
 
 #ground{
     display: flex;
     flex-wrap: nowrap;
-    height: 100px;
+    height: 60px;
     background: chocolate;
-    transition: 1s all ease-in;
+    transition: 1s all linear;
+    z-index: 0;
 }
 
 #ground > div{
+    background-image: url('rock.png');
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: chocolate;
     width: 20px;
     height: 15px;
     border-radius: 10px 10px 5px 5px;
-    background: grey;
 }
 
 #heaven{
     display: flex;
     flex-wrap: wrap;
-    flex-wrap: wrap;
-    align-items: flex-end;
+    align-content: space-between;
     width: 2000px;
-    height: 250px;
     background: skyblue;
-    transition: 1s all ease-in;
+    z-index: 1;
+    transition: 1s all linear;
 }
 
 #clouds{
     display: flex;
-    height: 100px;
-    padding: 20px;
-    transition: 1s all ease;
+    height: 80px;
+    transition: 1s all linear;
+    z-index: 1;
 }
 
 #clouds > div{
-    margin-right: 15px;
-    width: 120px;
-    height: 80px;
-    border-radius: 50%;
-    background: white; 
+    background-image: url('nuven.jpg');
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: skyblue;
+    z-index: 10;
 }
 
 #slash{

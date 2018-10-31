@@ -1,0 +1,14 @@
+<!doctype html>
+
+<html>
+    <head>
+        <script src='drag.js'></script>
+        <link rel='stylesheet' type='text/css' href='design.css'>
+    </head>
+        
+    <body onkeypress="command()">
+        <div id='field' style="height: 400px">
+            <div id='ball' draggable="true" ondrag="drag()" ondragend="drop()"><div></div></div>
+        </div>
+    </body>
+</html>
